@@ -1,0 +1,41 @@
+body {
+  height: 100vh;
+  display: flex;
+  background: #191919;
+  margin: 0;
+  padding: 0;
+  color: whitesmoke;
+}
+header {
+  background-color: #0f0f0f;
+  height: 4vh;
+  width: 100%;
+  padding: 1rem;
+}
+#name {
+  display: flex;
+  float: left;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+#navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+}
+#navLinks {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+#navLinks a {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 14px 16px;
+  display: block;
+}
+#navLinks a:hover {
+  background-color: #0a0a0a;
+}
