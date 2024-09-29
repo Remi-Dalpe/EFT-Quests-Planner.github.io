@@ -5,37 +5,61 @@ body {
   margin: 0;
   padding: 0;
   color: whitesmoke;
+  flex-direction: column;
 }
 header {
-  background-color: #0f0f0f;
-  height: 4vh;
-  width: 100%;
+  display: flex;
+  background-color: #070707;
+  height: 3rem;
+  width: 100vw;
   padding: 1rem;
+  box-shadow: -5px 4px 2px -2px #0a0a0a;
+  z-index: 10;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  width: 4rem;
+  height: 2rem;
+  margin: 0 1rem;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 #name {
   display: flex;
-  float: left;
-  font-size: 1.5rem;
-  font-weight: bold;
 }
-#navBar {
+#header-options {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 5px 10px;
+  margin-left: 5rem;
 }
-#navLinks {
-  list-style: none;
+#loot {
+  color: gold;
+  margin: 0.5rem;
+}
+#sidebar {
+  width: 15rem;
+  background-color: #3c3c3c;
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+#sort {
   display: flex;
-  margin: 0;
-  padding: 0;
+  align-items: center;
 }
-#navLinks a {
-  text-decoration: none;
-  font-size: 1rem;
-  padding: 14px 16px;
+#sort-dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  padding: 12px 16px;
+  z-index: 2;
+}
+#sort-dropdown:hover {
   display: block;
-}
-#navLinks a:hover {
-  background-color: #0a0a0a;
 }

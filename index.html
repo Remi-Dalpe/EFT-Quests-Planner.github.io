@@ -4,29 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>TQT by Remi Dalpe</title>
+    <title>EFT quest planner</title>
   </head>
   <body>
     <header>
-      <h1 id="name">Tarkov Quests Tool</h1>
+      <h1 id="name">EFT Quests Planner</h1>
+      <div id="header-options">
+        <input type="checkbox" id="loot-chechbox" name="loot" />
+        <label for="loot" id="loot">Loot Only ₽</label>
+      </div>
       <nav id="navBar">
-        <ul id="#navLinks">
-          <li><a href="#customs">Customs</a></li>
-          <li><a href="#factory">Factory</a></li>
-          <li><a href="#ground-zero">Ground Zero</a></li>
-          <li><a href="#interchange">Interchange</a></li>
-          <li><a href="#lighthouse">Lighthouse</a></li>
-          <li><a href="#reserve">Reserve</a></li>
-          <li><a href="#shoreline">Shoreline</a></li>
-          <li><a href="#streets">Streets</a></li>
-          <li><a href="#lab">Lab</a></li>
-          <li><a href="#woods">Woods</a></li>
-          <li><a href="#world">World</a></li>
-        </ul>
+        <ul id="#navLinks"></ul>
       </nav>
     </header>
     <main>
-      <aside></aside>
+      <aside id="sidebar">
+        <div id="sort">
+          <p>Sort by:</p>
+          <button class="btn dropdown">Name</button>
+          <div id="sort-dropdown">
+            <button>Traders</button>
+            <button>Levels</button>
+          </div>
+        </div>
+      </aside>
       <div id="map"></div>
     </main>
     <footer></footer>
