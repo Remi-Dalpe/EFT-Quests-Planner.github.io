@@ -28,6 +28,13 @@ header {
   position: relative;
   display: inline-block;
 }
+.user-input {
+}
+.user-choice {
+}
+.aside-section {
+  border-bottom: solid 2px #0a0a0a;
+}
 #name {
   display: flex;
 }
@@ -41,12 +48,14 @@ header {
   margin: 0.5rem;
 }
 #sidebar {
-  width: 15rem;
+  width: 17rem;
   background-color: #3c3c3c;
   color: white;
-  padding: 10px;
+  padding: 0 10px;
   box-sizing: border-box;
   z-index: 1;
+  height: 100vh;
+  box-shadow: 0 0 4px 1px #0a0a0a;
 }
 #sort {
   display: flex;
@@ -54,12 +63,16 @@ header {
 }
 #sort-dropdown {
   display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  padding: 12px 16px;
-  z-index: 2;
 }
-#sort-dropdown:hover {
-  display: block;
+#create-quest {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  padding: 10px 0;
+}
+#amount-quest {
+  width: 2rem;
+}
+#what-quest {
+  width: 4rem;
 }

@@ -19,13 +19,45 @@
     </header>
     <main>
       <aside id="sidebar">
-        <div id="sort">
+        <div id="sort" class="aside-section">
           <p>Sort by:</p>
           <button class="btn dropdown">Name</button>
           <div id="sort-dropdown">
             <button>Traders</button>
             <button>Levels</button>
           </div>
+        </div>
+        <div id="quest-list" class="aside-section">
+          <div id="quest-selected">
+            <p>Selected quests:</p>
+          </div>
+          <div id="other-quests">
+            <p>Select a quest:</p>
+          </div>
+          <div id="added-quest">
+            <p>Your added quests:</p>
+          </div>
+        </div>
+        <div id="create-quest">
+          <select name="task-list" id="task-constraint" class="user-choice">
+            <option value="kill">Kill</option>
+            <option value="find">Find</option>
+            <option value="give">Give</option>
+          </select>
+          <input
+            type="number"
+            id="amount-quest"
+            class="user-input"
+            name="amount"
+          />
+          <input type="search" id="what-quest" class="user-input" name="what" />
+          <select name="map-list" id="map-constraint" class="user-choice">
+            <option value="any">Any</option>
+            <option value="factory">Factory</option>
+            <option value="customs">Customs</option>
+            <option value="streets">Streets</option>
+          </select>
+          <button id="make-quest" class="btn">ADD</button>
         </div>
       </aside>
       <div id="map"></div>
